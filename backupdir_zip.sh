@@ -1,25 +1,5 @@
 #!/bin/bash
 
-# === Function === 
-# Backs up all files of a given source dir and saves into 'zip' on the target dir
-# Useful for backing up data in one drive to another (say on external) and good idea to run this on a cron
-
-# === Arguments ===
-# 1.Source Drive Letter (case-insensitive). Example 'g'
-# 2. Source Folder name (Exact case). Example 'My_Dir_to_backup'. No white spaces and must be unique to source drive!
-# 3. Target Drive letter (case-insensitive). Example 'e'
-# 4. Target Folder name (Exact case). Example 'Backedup_dirs'. No white spaces and must be unique to target drive! Defaults to root if not specified
-# 5. [Optional] Whether to keep as zip (default) or extract. Example: extract
-# 6. [Optional] Create an alias. Just pass in a name
-
-# Full Example: 
-# backupdir_zip.sh [target drive] [target folder] [source drive] [source folder] [extract] [alias name]
-# backupdir_zip.sh g working_dir e backups extract backupnow
-
-# === Running Script === 
-# $ bash backupdir_zip.sh [source drive letter] [source foldername] [target drive letter] [target foldername] [extract] &
-# ^ Skip args when calling the script by passing in am empty string '' - defaults will be used
-
 # Short-circuiting Guard Clause - First 3 args must be present && not empty strings
 [[ -z "$1" ||  -z "$2" || -z "$3" ]] && [[ !$1 && !$2 && !$3 ]] && echo "First three aguments are required! Please try again."
 
