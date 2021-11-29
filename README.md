@@ -10,7 +10,7 @@ _Note: So long as the folder names passed in are unique to that drive, the folde
 2. Source Folder name (Exact case). Example 'My_Dir_to_backup'. No white spaces and must be unique to source drive!
 3. Target Drive letter (case-insensitive). Example 'e'
 4. Target Folder name (Exact case). Example 'Backedup_dirs'. No white spaces and must be unique to target drive! Defaults to root if not specified
-5. [Optional] Whether to keep as zip (default) or extract. Example: extract
+5. [Optional] Whether to keep as zip (default) or extract. Anything other than 'extract' (including an empty string '') will result in no extraction.
 6. [Optional] Create an alias. Just pass in a name
 
 ### Full Example: 
