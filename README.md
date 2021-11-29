@@ -14,11 +14,11 @@ _Note: So long as the folder names passed in are unique to that drive, the folde
 
 # Full Example: 
 Abstract: `backupdir_zip.sh [target drive] [target folder] [source drive] [source folder] [extract] [alias name]`
+
 Concrete: `backupdir_zip.sh g dirtibackup e backupsdir extract backupnow
 
 ### On Alias
 If an alias is passed in, this backup process will be saved as an alias saved in the ~/.bashrc file.
 With this in place, one can run the exact same backup again at a later time by simply enerting the alias name they provided in the command line.
 
-_Note: This does require that one first log/out after this script is run - or manually source their .bashrc file
-make sure to source ~/.bashrc
+_Note: This does require that one must first log/out after this script is run - or manually source their .bashrc file for these changes to take effect._
