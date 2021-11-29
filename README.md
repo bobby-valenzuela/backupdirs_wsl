@@ -13,7 +13,7 @@ _Note: So long as the folder names passed in are unique to that drive, the folde
 5. [Optional] Whether to keep as zip (default) or extract. Example: extract
 6. [Optional] Create an alias. Just pass in a name
 
-# Full Example: 
+### Full Example: 
 Abstract: `bash backupdir_zip.sh [target drive] [target folder] [source drive] [source folder] [extract] [alias name]`
 
 Concrete: `bash backupdir_zip.sh g dirtibackup e backupsdir extract backupnow`
