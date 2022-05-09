@@ -30,7 +30,7 @@ _Note: This does require that one must first log/out after this script is run - 
 * Suppose your external drive letter is 'G'. Simply create a dir on the /mnt/ dir that corresponds to this letter.
 * * `sudo mkdir /mnt/g`
 * Then, mount your drive onto this dir
-* * `G: /mnt/g drvfs defaults 0 0 `
+* * `sudo mount G: /mnt/g drvfs defaults 0 0 `
 2. If you are considering running this as a cronjob to automatically run backups on a set schedule, make sure the cron service is running
 * You can chek the status of the cron service with
 * * `sudo service cron status`
